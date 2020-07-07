@@ -11,11 +11,12 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
+
 
         <TextView
             android:id="@+id/segment1"
@@ -24,64 +25,65 @@
             android:background="@drawable/segment_off"
             android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.455"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.199" />
 
         <TextView
             android:id="@+id/segment2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="90"
+            android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.299"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
+            app:layout_constraintVertical_bias="0.278" />
 
         <TextView
             android:id="@+id/segment3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="0"
+            android:rotation="-45"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.095" />
+            app:layout_constraintVertical_bias="0.278" />
 
         <TextView
             android:id="@+id/segment4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="0"
+            android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.301" />
+            app:layout_constraintVertical_bias="0.385" />
 
         <TextView
             android:id="@+id/segment5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="90"
+            android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.255"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.314"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.388" />
+            app:layout_constraintVertical_bias="0.301" />
 
         <TextView
             android:id="@+id/segment6"
@@ -91,23 +93,23 @@
             android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintHorizontal_bias="0.173"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.388" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/segment7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="0"
+            android:rotation="45"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintHorizontal_bias="0.438"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.301" />
+            app:layout_constraintVertical_bias="0.101" />
 
         <TextView
             android:id="@+id/segment8"
@@ -117,36 +119,36 @@
             android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintHorizontal_bias="0.564"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.106" />
+            app:layout_constraintVertical_bias="0.088" />
 
         <TextView
             android:id="@+id/segment9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="-45"
+            android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintHorizontal_bias="0.314"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.106" />
+            app:layout_constraintVertical_bias="0.088" />
 
         <TextView
             android:id="@+id/segment10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="0"
+            android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.297"
+            app:layout_constraintHorizontal_bias="0.191"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.095" />
+            app:layout_constraintVertical_bias="0.385" />
 
         <TextView
             android:id="@+id/segment11"
@@ -156,62 +158,62 @@
             android:rotation="45"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.299"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.106" />
+            app:layout_constraintVertical_bias="0.296" />
 
         <TextView
             android:id="@+id/segment12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="11dp"
+            android:layout_height="97dp"
             android:background="@drawable/segment_off"
-            android:rotation="90"
+            android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.299"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            app:layout_constraintVertical_bias="0.299" />
 
         <TextView
             android:id="@+id/segment13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="-45"
+            android:rotation="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintHorizontal_bias="0.055"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.280" />
+            app:layout_constraintVertical_bias="0.088" />
 
         <TextView
             android:id="@+id/segment14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="0"
+            android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.133"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
+            app:layout_constraintVertical_bias="0.199" />
 
         <TextView
             android:id="@+id/segment15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/segment_off"
-            android:rotation="45"
+            android:rotation="-45"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintHorizontal_bias="0.191"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.280" />
+            app:layout_constraintVertical_bias="0.088" />
 
         <TextView
             android:id="@+id/segment16"
@@ -221,10 +223,10 @@
             android:rotation="90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/segment1"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/etLetter"
