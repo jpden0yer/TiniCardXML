@@ -15,7 +15,7 @@ public class Spi {
 
 
 
-    static short characterMap [] ={
+    static short[] characterMap ={
             0x0,  0x0,    //0
             0xEE, 0xEE,  //1
             0xDD, 0xDD,  //2
@@ -81,7 +81,7 @@ public class Spi {
             0xFF, 0xDD,  //62  >
             0x7A, 0x7F,  //63  ?
             0x62, 0xA6,  //64  @
-           /* 0x3A, 0xE2,*/  0b11110011, 0b00010001,   //65  A
+            0x3A, 0xE2, /* 0b11110011, 0b00010001, */  //65  A
             0x22, 0x3E,  //66  B
             0xEB, 0xA6,  //67  C
             0xA2, 0x3E, //68  D
