@@ -11,11 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CardFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class CardFragment extends Fragment {
     private static final String TAG = "CardFragment";
     byte[] mSpiCode ;
@@ -77,15 +73,7 @@ public class CardFragment extends Fragment {
                                 for (int i = 1;i <= 16; i++){
 
                                     int segmentno = i;
-                    /*if (i <= 8) {
-                        segmentno = i ;
-                        segmentno = segmentno + 9 - 2 * (segmentno );
-                    }
-                    else {
-                        segmentno = i ;
-                        segmentno = segmentno + 9 - 2 * (segmentno - 8);
-                    }*/
-                                    //String thisBit = binaryform.substring(i, i + 1);
+
                                     String thisBit = binaryform.substring(i - 1, i );
                                     Log.d(TAG, "onClick: bit " + i + " = " + thisBit + " segment " + segmentno);
                                     if (thisBit.equals("1"))
@@ -94,9 +82,7 @@ public class CardFragment extends Fragment {
                                         mSegments[segmentno].setBackground(getContext().getDrawable(R.drawable.segment_on));
 
                                 }
-
                             }
-
 
                         }
                     });
@@ -108,49 +94,11 @@ public class CardFragment extends Fragment {
                 }
             }
         }).start();
-
     }
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public CardFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CardFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CardFragment newInstance(String param1, String param2) {
-        CardFragment fragment = new CardFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -178,3 +126,57 @@ public class CardFragment extends Fragment {
         return view;
     }
 }
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link CardFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment CardFragment.
+     */
+    // TODO: Rename and change types and number of parameters
+    /*
+     // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+    @org.jetbrains.annotations.NotNull
+    public static CardFragment newInstance(String param1, String param2) {
+        CardFragment fragment = new CardFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+
+
+    */
+
+
+
+
+
