@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Log.d(TAG1, "onClick: begin");
-             String letter = mEtLetter.getText().toString();
+             String letter = mEtLetter.getText().toString().toUpperCase();
+                mEtLetter.setText(letter);
                 Log.d(TAG1, "onClick: letter from mEtLetter: '" + letter + "'" );
              if (letter.length() == 0) return;
              letter = letter.substring(0,1);
@@ -52,3 +53,7 @@ public class MainActivity extends AppCompatActivity
         return mSpiCode;
     }
 }
+
+/*
+"071120 JPCF clean and change color"
+*/
