@@ -22,11 +22,34 @@ public class CardFragment extends Fragment {
     OnCardFragmentListener mListener;
 
     interface OnCardFragmentListener {
-        byte[] OnPollBytes();
+        byte[] OnPollBytes(int cardno);
 
     }
 
     private FragmentCardBinding binding;
+
+    private static final String ARG_CARDNO = "cardno";
+
+    private int mCardno;
+
+    @org.jetbrains.annotations.NotNull
+    public static CardFragment newInstance(int pCardno) {
+        CardFragment fragment = new CardFragment();
+        Bundle args = new Bundle();
+        args.putInt(ARG_CARDNO, pCardno);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mCardno = getArguments().getInt(ARG_CARDNO);
+
+        }
+    }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -44,7 +67,7 @@ public class CardFragment extends Fragment {
                         @Override
                         public void run() {
                             byte[] fSpiCode;
-                            fSpiCode = mListener.OnPollBytes();
+                            fSpiCode = mListener.OnPollBytes(mCardno);
                             if (fSpiCode != null  &&
                                 fSpiCode.length == 2 &&
                                 (

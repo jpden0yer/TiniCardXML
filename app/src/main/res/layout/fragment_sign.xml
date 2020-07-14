@@ -6,20 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SignFragment">
 
-    <fragment
-        android:id="@+id/card1"
-        android:name="com.tinilite.cardxml.CardFragment"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card2"
+
         android:layout_width="291dp"
         android:layout_height="320dp"
-         tools:layout="@layout/fragment_card" />
+         />
 
-    <fragment
-        android:id="@+id/card2"
-        android:name="com.tinilite.cardxml.CardFragment"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card1"
         android:layout_width="291dp"
         android:layout_height="320dp"
         android:layout_marginTop="300dp"
-        tools:layout="@layout/fragment_card" />
+         />
 
 
 </FrameLayout>

@@ -40,7 +40,7 @@
             android:ems="10"
             android:hint="Single letter"
             android:inputType="textPersonName"
-            android:maxLength="1"
+            android:maxLength="2"
             android:text=""
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

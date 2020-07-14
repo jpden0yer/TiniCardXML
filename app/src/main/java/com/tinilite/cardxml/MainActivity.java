@@ -38,19 +38,26 @@ public class MainActivity extends AppCompatActivity
              String letter = mEtLetter.getText().toString().toUpperCase();
                 mEtLetter.setText(letter);
                 Log.d(TAG1, "onClick: letter from mEtLetter: '" + letter + "'" );
-             if (letter.length() == 0) return;
-             letter = letter.substring(0,1);
+             if (letter.length() < 2) return;
+             letter = letter.substring(0,2);
               //byte[] spicode = Spi.generateSpiCode(letter);
                 mSpiCode = Spi.generateSpiCode(letter);
+
 
             }
         });
     }
 
     @Override
-    public byte[] OnPollBytes() {
+    public byte[] OnPollBytes(int pCardno) {
 
-        return mSpiCode;
+        if (mSpiCode == null)
+            return null;
+        byte [] spicode = new byte[2];
+
+        spicode[0] = mSpiCode[2 * (pCardno - 1)] ;
+        spicode[1] = mSpiCode[2 * (pCardno - 1) + 1] ;
+        return spicode;
     }
 }
 
