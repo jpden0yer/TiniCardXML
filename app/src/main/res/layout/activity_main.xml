@@ -18,10 +18,10 @@
         tools:context=".MainActivity">
 
         <fragment
-            android:id="@+id/fragment"
-            android:name="com.tinilite.cardxml.CardFragment"
-            android:layout_width="291dp"
-            android:layout_height="320dp"
+            android:id="@+id/sign"
+            android:name="com.tinilite.cardxml.SignFragment"
+            android:layout_width="411dp"
+            android:layout_height="728dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            tools:layout="@layout/fragment_card" />
+            tools:layout="@layout/fragment_sign" />
 
         <EditText
             android:id="@+id/etLetter"
