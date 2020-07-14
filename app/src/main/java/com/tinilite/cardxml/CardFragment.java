@@ -107,15 +107,10 @@ public class CardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-
         //inflate the binding
         binding = FragmentCardBinding.inflate(inflater, container, false);
-
         // get the root view to return
         final View view  = binding.getRoot();
-
-
         mSegments[1] = binding.segment1;
         mSegments[2] = binding.segment2;
         mSegments[3] = binding.segment3;
@@ -132,8 +127,6 @@ public class CardFragment extends Fragment {
         mSegments[14] = binding.segment14;
         mSegments[15] = binding.segment15;
         mSegments[16] = binding.segment16;
-
-
         return view;
     }
 }
