@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.tinilite.cardxml.databinding.FragmentCardBinding;
+
 
 public class CardFragment extends Fragment {
     private static final String TAG = "CardFragment";
@@ -24,6 +26,7 @@ public class CardFragment extends Fragment {
 
     }
 
+    private FragmentCardBinding binding;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -103,26 +106,27 @@ public class CardFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-       final View view = inflater.inflate(R.layout.fragment_card, container, false);
-        mSegments[1] = view.findViewById(R.id.segment1);
-        mSegments[2] = view.findViewById(R.id.segment2);
-        mSegments[3] = view.findViewById(R.id.segment3);
-        mSegments[4] = view.findViewById(R.id.segment4);
-        mSegments[5] = view.findViewById(R.id.segment5);
-        mSegments[6] = view.findViewById(R.id.segment6);
-        mSegments[7] = view.findViewById(R.id.segment7);
-        mSegments[8] = view.findViewById(R.id.segment8);
-        mSegments[9] = view.findViewById(R.id.segment9);
-        mSegments[10] = view.findViewById(R.id.segment10);
-        mSegments[11] = view.findViewById(R.id.segment11);
-        mSegments[12] = view.findViewById(R.id.segment12);
-        mSegments[13] = view.findViewById(R.id.segment13);
-        mSegments[14] = view.findViewById(R.id.segment14);
-        mSegments[15] = view.findViewById(R.id.segment15);
-        mSegments[16] = view.findViewById(R.id.segment16);
 
-
+        //inflate the binding
+        binding = FragmentCardBinding.inflate(inflater, container, false);
+        // get the root view to return
+        final View view  = binding.getRoot();
+        mSegments[1] = binding.segment1;
+        mSegments[2] = binding.segment2;
+        mSegments[3] = binding.segment3;
+        mSegments[4] = binding.segment4;
+        mSegments[5] = binding.segment5;
+        mSegments[6] = binding.segment6;
+        mSegments[7] = binding.segment7;
+        mSegments[8] = binding.segment8;
+        mSegments[9] = binding.segment9;
+        mSegments[10] = binding.segment10;
+        mSegments[11] = binding.segment11;
+        mSegments[12] = binding.segment12;
+        mSegments[13] = binding.segment13;
+        mSegments[14] = binding.segment14;
+        mSegments[15] = binding.segment15;
+        mSegments[16] = binding.segment16;
         return view;
     }
 }
